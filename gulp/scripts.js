@@ -74,7 +74,10 @@ gulp.task("scripts-compile-sdk", ["scripts-external"], function() { return scrip
 gulp.task("scripts-compile-cli", ["scripts-sdk", "scripts-external"], function() { return scriptTask("cli"); });
 
 gulp.task("scripts-chmod-cli", ["scripts-compile-cli"], function() {
-    makeExecutable(__dirname + "/../cli/bin/script/cli.js");
+    let dir = __dirname + "/../cli/bin/script/cli.js";
+    console.log("dir");
+    console.log(dir);
+    makeExecutable(dir);
 });
 
 gulp.task("scripts-dtsbundle-sdk", ["scripts-compile-sdk"], function () {

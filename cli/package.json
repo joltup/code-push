@@ -1,13 +1,14 @@
 {
-  "name": "code-push-cli",
-  "version": "1.12.4-beta",
+  "name": "code-push-cli-jolt",
+  "private": true,
+  "version": "1.12.4-beta.8",
   "description": "Management CLI for the CodePush service",
   "main": "script/cli.js",
   "scripts": {
     "test": "gulp test"
   },
   "bin": {
-    "code-push": "script/cli.js"
+    "code-push-jolt": "script/cli.js"
   },
   "repository": {
     "type": "git",
